@@ -68,7 +68,7 @@ TITLE = r"""\title{Workbook\\Mechatronics I}
 \maketitle
 """
 
-workbook = 'workbook.tex'
+workbook = '/home/mcfuck/mechatronics/workbook/workbook.tex'
 
 HEADER = CLASS+PACKAGES+TITLE
 
@@ -91,7 +91,6 @@ with open(workbook, 'r') as d:
     tex_lines.append(r'\end{document}')
 
 export_str = ''.join(tex_lines)
-print(export_str)
 
 with open(workbook, 'w+') as c:
     c.write(export_str)
